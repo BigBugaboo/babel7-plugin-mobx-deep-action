@@ -1,0 +1,17 @@
+{
+  "name": "@bugaboo/babel7-plugin-mobx-deep-action",
+  "version": "0.0.1",
+  "description": "Allow to reduce boilerplate of writing async actions",
+  "main": "lib/index.js",
+  "repository": "git@github.com:BigBugaboo/babel7-plugin-mobx-deep-action.git",
+  "author": "bugaboo <hj497304787@vip.qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12"
+  }
+}
