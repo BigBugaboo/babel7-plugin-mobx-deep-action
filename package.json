@@ -7,11 +7,21 @@
   "author": "bugaboo <hj497304787@vip.qq.com>",
   "license": "MIT",
   "scripts": {
-    "build": "babel src -d lib"
+    "build": "babel src -d lib",
+    "report": "npm run build && mocha --reporter mochawesome --require @babel/register",
+    "test": "npm run build && mocha --require @babel/register",
+    "test:watch": "npm run build && npm run test -- --watch"
   },
   "dependencies": {
     "@babel/cli": "^7.13.14",
     "@babel/core": "^7.13.14",
     "@babel/preset-env": "^7.13.12"
+  },
+  "devDependencies": {
+    "@babel/parser": "^7.13.13",
+    "@babel/register": "^7.13.14",
+    "@babel/traverse": "^7.13.13",
+    "mocha": "^8.3.2",
+    "mochawesome": "^6.2.2"
   }
 }
